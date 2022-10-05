@@ -1,32 +1,38 @@
 <!DOCTYPE html>
 <html>
-<head>
-	<title>2048</title>
-	<link rel="stylesheet" type="text/css" href="reset.css">
-	<link rel="stylesheet" type="text/css" href="style.css">
-	<link href="https://fonts.googleapis.com/css?family=ZCOOL+KuaiLe" rel="stylesheet">
-</head>
-<body>
-
-	<h1 id="title">2048 GAME</h1>
-	<div class="Game">
-		<div class="Grid"></div>
-		<div class="Controls">
-			<button type="button" id="up">UP</button>
-			<div>
-				<button type="button" id="left">LEFT</button>
-				<button type="button" id="right">RIGHT</button>
-			</div>
-			<button type="button" id="down">DOWN</button>
-			<p id="score">Score</p>
-		</div>		
-	</div>
-
-</body>
-	<script
-	src="https://code.jquery.com/jquery-3.3.1.min.js"
-	integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
-	crossorigin="anonymous"></script>
-	<script src="tile.js"></script>
-	<script src="grid.js"></script>
+  <head>
+    <title>2048 Game</title>
+    <link rel="stylesheet" type="text/css" href="reset.css" />
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <h1 id="title">The 2048 Game</h1>
+    <div class="Game">
+      <div class="GridShadow">
+        <div class="Grid"></div>
+      </div>
+      <div class="Controls">
+        <button type="button" id="up">UP</button>
+        <button type="button" id="left">LEFT</button>
+        <button type="button" id="right">RIGHT</button>
+        <button type="button" id="down">DOWN</button>
+      </div>
+    </div>
+    <div class="scoreContainer">
+      <span>Score :</span> <span id="score">0</span>
+    </div>
+  </body>
+  <script
+    src="https://code.jquery.com/jquery-3.3.1.min.js"
+    integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+    crossorigin="anonymous"
+  ></script>
+  <script src="tile.js"></script>
+  <script src="grid.js"></script>
 </html>
